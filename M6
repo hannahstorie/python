@@ -1,0 +1,42 @@
+import sys    
+for line in sys.stdin:
+data = line.strip().split(“\t”)
+if len(data) == 6:
+date, time, store, item, cost, payment = data
+print “{0}\t{1}”.format(item, cost)
+import sys
+from datetime import datetime
+from datetime import time
+from datetime import date
+def main():
+
+    dt = datetime.now()
+   #utc = datetime.utcnow()
+    time_string = dt.strftime(“%X”)
+    “””https://strftime.org””&#8221;
+
+    for line in sys.stdin:
+        data = line.strip().split(“\t”)
+        if len(data) == 6:
+            _date, _time, store, item, cost, payment = data
+            print (“{dt}\t{time_string}\t{store}\t{item}\t{cost}\t{payment}”
+main()
+
+from datetime import datetime
+from datetime import timedelta
+
+Add timedelta
+print datetime.now()+timedelta(days=1)
+
+subtract 60 seconds
+print datetime.now()+timedelta(seconds=60)
+
+add 2 year
+print datetime.now()+timedelta(days=730)
+
+#python create time delta object representing 100 days 10 hours and 13 minutes
+
+from datetime import timedelta
+
+d = timedelta(days=100, hours=10, minutes=13)
+print(d)
